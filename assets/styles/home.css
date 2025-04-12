@@ -1,0 +1,63 @@
+/* Apresentação */
+.home__apresentacao{
+    height:70vh;
+    padding: 4rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+}
+
+.home__apresentacao-img{
+    width:30%;
+}
+
+.home__apresentacao-img img{
+    width:100%;
+}
+
+.home__apresentacao-textos{
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    gap:2.5rem;
+}
+
+.home__apresentacao-textos p{
+    font-size: 32px;
+}
+
+.home__apresentacao-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:4rem;
+}
+
+.home__apresentacao-links a{
+    padding:1rem 1.5rem;
+    text-align: center;
+    width:200px;
+    border-radius: 32px;
+    font-size: 28px;
+    background-color: var(--cor-primaria);
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+/* Avaliações */
+.home__avaliacoes{
+    background-color: var(--cor-background-avaliacoes);
+    height:60vh;
+    padding: 4rem;
+    display:flex;
+    gap:2rem;
+}
+
+.home__avaliacoes h2{
+    color: #FFFFFF;
+    font-size: 50px;
+}

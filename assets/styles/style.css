@@ -1,0 +1,34 @@
+@import url("reset.css");
+@import url("home.css");
+@import url("contato.css");
+@import url("reserva.css");
+
+
+/*Variáveis CSS*/
+:root{
+    --cor-primaria: #496623;
+
+    --cor-texto-principal: #000000;
+
+    --cor-background-principal: #F5F5F5;
+    --cor-background-avaliacoes: #1C1C1C;
+    --cor-background-formulario: #FFFFFF;
+
+    --cor-marcacao-avaliacoes: #0000FF;
+
+    --cor-mesas-disponiveis: #496623;
+    --cor-mesas-nao-disponiveis: #AF0102;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background-inicial{
+    margin:0;
+    background-image: url("../imgs/background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height:100vh;
+}
