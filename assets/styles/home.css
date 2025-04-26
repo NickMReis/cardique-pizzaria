@@ -51,13 +51,72 @@
 /* Avaliações */
 .home__avaliacoes{
     background-color: var(--cor-background-avaliacoes);
-    height:60vh;
+    height:85vh;
     padding: 4rem;
     display:flex;
-    gap:2rem;
+    flex-direction: column;
+    gap:3rem;
 }
 
 .home__avaliacoes h2{
     color: #FFFFFF;
-    font-size: 50px;
+    font-size: 60px;
+}
+
+.home__avaliacoes-cards{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.home__avaliacoes-cards-card{
+    background-color: var(--cor-background-principal);
+    padding:2rem;
+    width:50%;
+    height:270px;
+    border-radius: 32px;
+    display: flex;
+    gap:4rem;
+}
+
+.avaliacoes__card-img{
+    width:249px;
+    height:249px;
+    border-radius: 16px;
+    align-self:center;
+}
+
+.avaliacoes__card-comentario{
+    align-self:center;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.avaliacoes__card-comentario-estrelas{
+    display:flex;
+    gap:3rem;
+}
+
+.avaliacoes__card-comentario-texto{
+    align-self: flex-start;
+    text-align: start;
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem
+}
+
+.avaliacoes__card-comentario-texto h3{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.avaliacoes__card-comentario-texto p{
+    font-size: 18px;
+}
+
+.avaliacoes__card-comentario-texto p span{
+    color: var(--cor-marcacao-avaliacoes);
 }
