@@ -7,6 +7,71 @@
     <link rel="stylesheet" href="/assets/styles/style.css">
 </head>
 <body>
-    
+    <section class="background-inicial"></section>
+    <main id="reservas">
+        <section class="reservas__sistema-de-reserva">
+            <div class="reservas__sistema-textos">
+                <h2>Sistema de reservas de mesa</h2>
+                <h2>Pizzaria dia 02/05/2025</h2>
+            </div>
+            <div class="reservas__sistema-mesas">
+                <div class="conjunto-mesas">
+                    <span class="mesa reservada"><p>1</p></span>
+                    <span class="mesa disponivel"><p>2</p></span>
+                    <span class="mesa reservada"><p>3</p></span>
+                    <span class="mesa reservada"><p>4</p></span>
+                    <span class="mesa disponivel"><p>5</p></span>
+                </div>
+                <div class="conjunto-mesas">
+                    <span class="mesa disponivel"><p>6</p></span>
+                    <span class="mesa reservada"><p>7</p></span>
+                    <span class="mesa reservada"><p>8</p></span>
+                    <span class="mesa disponivel"><p>9</p></span>
+                    <span class="mesa disponivel"><p>10</p></span>
+                </div>
+                <div class="conjunto-mesas">
+                    <span class="mesa reservada"><p>11</p></span>
+                    <span class="mesa disponivel"><p>12</p></span>
+                    <span class="mesa nada"></span>
+                    <span class="mesa nada"></span>
+                    <span class="mesa nada"></span>
+                </div>
+            </div>
+            <div class="reservas__sistema-final">
+                <div class="sistema__detalhes-mesas">
+                    <span>
+                        <span class="detalhes-mesa-cor disponivel"></span>
+                        <p>Mesa disponível</p>
+                    </span>
+                    <span>
+                        <span class="detalhes-mesa-cor reservada"></span>
+                        <p>Mesa já reservada</p>
+                    </span>
+                </div>
+                <img src="../assets/imgs/tapete-de-entrada.png" alt="Tapete">
+                <img class="img-caixa" src="../assets/imgs/Caixa.png" alt="Caixa">
+            </div>
+        </section>
+        <section class="reservas__formulario">
+            <form>
+                <label for="nome">NOME::</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+            
+                <label for="telefone">TELEFONE:</label><br>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+                <label for="quantidadePessoas">QUANTIDADE DE PESSOAS</label><br>
+                <input type="number" id="quantidadePessoas" name="quantidadePessoas" required><br><br>
+            
+                <label for="numeroMesa">MESA:</label><br>
+                <input type="number" id="numeroMesa" name="numeroMesa" required><br><br>
+            
+                <label for="horario">HORÁRIO::</label><br>
+                <input type="time" id="horario" name="horario" required><br><br>
+            
+                <input type="submit" value="Confirmar">
+              </form>
+        </section>
+    </main>
 </body>
 </html>

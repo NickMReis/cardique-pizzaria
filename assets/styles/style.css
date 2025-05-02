@@ -25,8 +25,7 @@ body{
 }
 
 .background-inicial{
-    margin:0;
-    background-image: url("../imgs/background.png");
+    background-image: url("../imgs/banner.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
