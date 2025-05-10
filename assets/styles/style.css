@@ -10,6 +10,8 @@
 
     --cor-texto-principal: #000000;
 
+    --cor-link: #FFFFFF;
+
     --cor-background-principal: #F5F5F5;
     --cor-background-avaliacoes: #1C1C1C;
     --cor-background-formulario: #FFFFFF;
@@ -22,6 +24,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    background-color: var(--cor-background-principal);
 }
 
 .background-inicial{
@@ -30,4 +33,43 @@ body{
     background-position: center;
     background-size: cover;
     height:100vh;
+    padding: 2rem 4rem;
 }
+
+.links-cabecalho{
+    display: flex;
+    gap:3rem;
+}
+
+.links-cabecalho a, .links-cabecalho button{
+    font-size: 50px;
+    color:var(--cor-link);
+    cursor: pointer;
+    font-weight: 500;
+    align-self: center;
+}
+
+.links-cabecalho a{
+    text-decoration: none;
+}
+
+.links-cabecalho button{
+    background-color: transparent;
+    border: none;
+}
+
+.link-reservas{
+    padding:0 1rem;
+    display: flex;
+    justify-content: end;
+    height:71%;
+    align-items: end;
+}
+
+.link-reservas a{
+    width:385px;
+    height:100px;
+}
+/* .link-reservas a:hover{
+    background-color: blueviolet;
+} */

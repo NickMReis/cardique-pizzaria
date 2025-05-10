@@ -84,3 +84,69 @@
 .img-caixa{
     width:380px;
 }
+
+.reservas__formulario{
+    min-height:90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:200;
+}
+
+.reservas__formulario form{
+    padding:3rem;
+    border:1px solid #000;
+    border-radius:32px;
+    width:500px;
+    height:600px;
+    background-color: var(--cor-background-formulario);
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.reservas__formulario form h2{
+    font-size: 50px;
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+.formulario__elemento{
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.formulario__elemento label{
+    font-size:28px;
+    color:var(--cor-texto-principal);
+}
+
+.formulario__elemento input{
+    width:400px;
+    height:40px;
+    border:none;
+    background-color: var(--cor-background-principal);
+    border-bottom: 1px solid #000;
+}
+
+.menores{
+    gap:2rem;
+    flex-direction: row;
+}
+
+.menor input{
+    width:150px;
+}
+
+.formulario__botao{
+    margin-top:0.5rem;
+    width:190px;
+    height:60px;
+    align-self: end;
+    border-radius: 16px;
+    font-size: 30px;
+    border:none;
+    background-color: var(--cor-primaria);
+    color:var(--cor-background-formulario);
+}
