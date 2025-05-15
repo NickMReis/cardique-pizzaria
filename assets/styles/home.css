@@ -42,8 +42,12 @@
     border-radius: 32px;
     font-size: 28px;
     background-color: var(--cor-primaria);
-    color: #FFFFFF;
+    color: var(--cor-texto-secundario);
     text-decoration: none;
+}
+
+.home__apresentacao-links a:hover{
+    background-color: #6A9E30;
 }
 
 
@@ -59,7 +63,7 @@
 }
 
 .home__avaliacoes h2{
-    color: #FFFFFF;
+    color: var(--cor-texto-secundario);
     font-size: 60px;
 }
 
@@ -105,7 +109,8 @@
     text-align: start;
     display:flex;
     flex-direction: column;
-    gap:1.5rem
+    gap:1.5rem;
+    color: var(--cor-texto-principal);
 }
 
 .avaliacoes__card-comentario-texto h3{

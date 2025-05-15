@@ -9,17 +9,20 @@
     --cor-primaria: #496623;
 
     --cor-texto-principal: #000000;
-
-    --cor-link: #FFFFFF;
+    --cor-texto-secundario:#FFFFFF;
 
     --cor-background-principal: #F5F5F5;
     --cor-background-avaliacoes: #1C1C1C;
     --cor-background-formulario: #FFFFFF;
+    --cor-background-cardapio: #333333;
+    --cor-background-mapa: #D9D9D9;
 
     --cor-marcacao-avaliacoes: #0000FF;
 
     --cor-mesas-disponiveis: #496623;
     --cor-mesas-nao-disponiveis: #AF0102;
+
+    --cor-hover-btns: #6A9E30;
 }
 
 body{
@@ -43,7 +46,7 @@ body{
 
 .links-cabecalho a, .links-cabecalho button{
     font-size: 50px;
-    color:var(--cor-link);
+    color:var(--cor-texto-secundario);
     cursor: pointer;
     font-weight: 500;
     align-self: center;
@@ -56,6 +59,11 @@ body{
 .links-cabecalho button{
     background-color: transparent;
     border: none;
+}
+
+.links-cabecalho a:hover, .links-cabecalho button:hover{
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
 }
 
 .link-reservas{
@@ -73,3 +81,54 @@ body{
 /* .link-reservas a:hover{
     background-color: blueviolet;
 } */
+
+
+/* Modal de exibição do cardápio */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-conteudo {
+  background: var(--cor-background-cardapio);
+  padding: 1.5rem;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-conteudo img{
+    width: 100%;
+    border-radius: 16px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Botão de fechar */
+.fechar-modal {
+  position: absolute;
+  top: 0.5rem;
+  right: 1.5rem;
+  font-size: 7rem;
+  font-weight: bold;
+  color: var(--cor-background-principal);
+  cursor: pointer;
+}
+
+.fechar-modal:hover{
+    color:blanchedalmond;
+}

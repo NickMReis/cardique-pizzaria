@@ -44,11 +44,20 @@
     justify-content: space-between;
 }
 
+.contato__informação-descricao ul li a img{
+    transition: transform 0.3s ease;
+}
+
+.contato__informação-descricao ul li a img:hover{
+    transform: scale(1.2);
+    opacity: 0.8;
+}
+
 .contato__mapa{
     text-align: center;
 }
 .contato__mapa iframe{
-    background-color: #D9D9D9;
+    background-color: var(--cor-background-mapa);
     padding:3rem;
     width:1000px;
     height:600px;
