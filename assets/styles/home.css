@@ -1,6 +1,7 @@
 /* Apresentação */
 .home__apresentacao{
-    height:70vh;
+    background-color: white;
+    min-height:70vh;
     padding: 4rem;
     display:flex;
     flex-direction: row;
@@ -78,7 +79,7 @@
 .home__avaliacoes-cards-card{
     background-color: var(--cor-background-principal);
     padding:2rem;
-    width:50%;
+    width:70%;
     height:270px;
     border-radius: 32px;
     display: flex;
@@ -124,4 +125,93 @@
 
 .avaliacoes__card-comentario-texto p span{
     color: var(--cor-marcacao-avaliacoes);
+}
+
+/* Media 1366px */
+@media screen and (max-width:1366px){
+    .home__apresentacao{
+        padding: 2rem;
+    }
+    .home__apresentacao-textos p{
+        font-size: 24px;
+    }
+    .home__apresentacao-links a{
+        font-size:22px;
+    }
+
+    /* Avaliações */
+    .home__avaliacoes{
+        padding: 2rem;
+    }
+
+    .home__avaliacoes-cards-card{
+        width:60%;
+        gap:2rem;
+    }
+
+    .avaliacoes__card-img{
+        max-width:150px;
+        max-height:150px;
+    }
+
+    .avaliacoes__card-comentario-estrelas{
+        gap:1.25rem;
+    }
+
+    .avaliacoes__card-comentario-estrelas img{
+        max-width:36px;
+        max-height:36px;
+    }
+
+    .avaliacoes__card-comentario-texto h3{
+        font-size: 30px;
+    }
+}
+
+
+/* Media 768px */
+@media screen and (max-width:768px){
+    .home__apresentacao{
+        flex-direction: column;
+    }
+    .home__apresentacao-textos{
+        width:90%;
+    }
+    .home__apresentacao-links{
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    /* Avaliações */
+    .home__avaliacoes{
+        padding: 1.5rem;
+    }
+
+    .home__avaliacoes h2{
+        font-size:40px;
+    }
+
+    .home__avaliacoes-cards-card{
+        width:80%;
+        height:240px;
+        gap:2rem;
+    }
+
+    .avaliacoes__card-img{
+        max-width:120px;
+        max-height:120px;
+    }
+
+    .avaliacoes__card-comentario-estrelas{
+        gap:1rem;
+    }
+
+    .avaliacoes__card-comentario-estrelas img{
+        max-width:26px;
+        max-height:26px;
+    }
+
+    .avaliacoes__card-comentario-texto h3{
+        font-size: 26px;
+    }
 }

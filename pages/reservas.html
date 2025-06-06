@@ -11,11 +11,14 @@
 </head>
 <body>
     <section class="background-inicial">
-        <div class="links-cabecalho">
-            <a href="../index.html">Home</a>
-            <button id="abrirCardapio">Cardápio</button>
-            <a href="contato.html">Contato</a>
-        </div>
+        <div class="menu-hamburguer">
+                <span id="iconeMenu">&#9776;</span>
+            </div>
+            <nav class="links-cabecalho" id="menuLinks">
+                <a href="../index.html">Home</a>
+                <button id="abrirCardapio">Cardápio</button>
+                <a href="pages/contato.html">Contato</a>
+            </nav>
         <div id="modalCardapio" class="modal">
             <div class="modal-conteudo">
                 <span class="fechar-modal" id="fecharCardapio">&times;</span>
@@ -115,7 +118,7 @@
             </form>
         </section>
     </main>
-
+    <script src="../assets/js/codigo-menu-hamburguer.js"></script>
     <script>
         const btnAbrir = document.getElementById('abrirCardapio');
         const modal = document.getElementById('modalCardapio');

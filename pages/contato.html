@@ -11,11 +11,14 @@
 </head>
 <body>
     <section class="background-inicial">
-        <div class="links-cabecalho">
-            <a href="../index.html">Home</a>
-            <button id="abrirCardapio">Cardápio</button>
-            <a href="contato.html">Contato</a>
-        </div>
+        <div class="menu-hamburguer">
+                <span id="iconeMenu">&#9776;</span>
+            </div>
+            <nav class="links-cabecalho" id="menuLinks">
+                <a href="../index.html">Home</a>
+                <button id="abrirCardapio">Cardápio</button>
+                <a href="pages/contato.html">Contato</a>
+            </nav>
         <div id="modalCardapio" class="modal">
             <div class="modal-conteudo">
                 <span class="fechar-modal" id="fecharCardapio">&times;</span>
@@ -82,6 +85,7 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3688.9383928522143!2d-42.962229924478265!3d-22.393679819735368!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x984c8d72440a5f%3A0xc2908311701787eb!2sUnifeso%20-%20Campus%20Quinta%20do%20Para%C3%ADso!5e0!3m2!1spt-BR!2sbr!4v1745626468309!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
+    <script src="../assets/js/codigo-menu-hamburguer.js"></script>
     <script>
         const btnAbrir = document.getElementById('abrirCardapio');
         const modal = document.getElementById('modalCardapio');
