@@ -48,7 +48,6 @@ body{
     position: absolute;
     top: 2rem;
     right: 2rem;
-    padding:1rem;
 }
 
 .links-cabecalho{
@@ -155,6 +154,7 @@ body{
 @media screen and (max-width:768px) {
     .background-inicial{
         background-image: url("../imgs/background-mobile.png");
+        background-size: cover;
     }
 
     .menu-hamburguer {

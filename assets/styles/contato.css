@@ -89,9 +89,23 @@
 
 /* Media 768px */
 @media screen and (max-width:768px){
+    .contato__informacao h2{
+        font-size:32px;
+    }
+    .contato__informação-descricao span p{
+        font-size: 20px;
+    }
     .contato__mapa iframe{
         padding:1rem;
         max-width:400px;
         max-height:300px;
+    }
+}
+
+/* Media 768px */
+@media screen and (max-width:500px){
+    .contato__mapa iframe{
+        max-width:310px;
+        max-height:250px;
     }
 }
