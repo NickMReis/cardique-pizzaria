@@ -85,6 +85,8 @@
     width:380px;
 }
 
+
+/* Form */
 .reservas__formulario{
     padding:4rem;
     min-height:90vh;
@@ -154,4 +156,148 @@
 
 .formulario__botao:hover{
     background-color: var(--cor-hover-btns);
+}
+
+
+
+/* Media 1366px */
+@media screen and (max-width:1366px){
+    /* Mapa do restaurante */
+    .reservas__sistema-textos, .reservas__sistema-mesas{
+        padding:2rem;
+    }
+    .reservas__sistema-textos h2{
+        font-size: 24px;
+    }
+    .conjunto-mesas{
+        justify-content: space-evenly;
+    }
+    .mesa{
+        width:80px;
+        height:80px;
+        font-size: 32px;
+        border-radius:16px;
+    }
+
+    .sistema__detalhes-mesas{
+        padding:1.5rem;
+    }
+
+    .sistema__detalhes-mesas span{
+        font-size: 22px;
+    }
+
+    .img-tapete{
+        max-width: 140px;
+    }
+
+    .img-caixa{
+        width:250px;
+    }
+
+
+    /* Form */
+    .reservas__formulario{
+        padding:2rem;
+    }
+
+    .reservas__formulario form{
+        padding:2rem;
+        border:1px solid var(--cor-texto-principal);
+        border-radius:32px;
+        width:400px;
+        height:570px;
+    }
+
+    .formulario__elemento label{
+        font-size:22px;
+    }
+
+    .formulario__botao{
+        margin-top:0.5rem;
+        width:170px;
+        height:50px;
+        border-radius: 8px;
+        font-size: 24px;
+    }
+}
+
+
+
+/* Media 768px */
+@media screen and (max-width:768px){
+    /* Mapa do restaurante */
+    .reservas__sistema-de-reserva{
+        min-height:80vh;
+    }
+    .reservas__sistema-textos, .reservas__sistema-mesas{
+        padding:1rem;
+    }
+    .reservas__sistema-textos h2{
+        font-size: 18px;
+    }
+    .reservas__sistema-mesas{
+        gap:4rem;
+    }
+    .mesa{
+        width:40px;
+        height:40px;
+        font-size: 20px;
+        border-radius:8px;
+    }
+
+    .sistema__detalhes-mesas{
+        padding:2rem;
+        gap:1rem;
+    }
+
+    .sistema__detalhes-mesas span{
+        font-size: 18px;
+        gap:1rem;
+    }
+
+    .detalhes-mesa-cor{
+        width: 22px;
+        height:22px;
+    }
+
+    .img-tapete, .img-caixa{
+        display:none;
+    }
+
+    /* Form */
+    .reservas__formulario{
+        padding:1rem;
+    }
+    .reservas__formulario form{
+        padding:1.75rem;
+        border:1px solid var(--cor-texto-principal);
+        border-radius:16px;
+        width:250px;
+        height:550px;
+        gap:1.5rem;
+    }
+    .reservas__formulario form h2{
+        font-size: 40px;
+    }
+    .formulario__elemento label{
+        font-size:18px;
+    }
+    .formulario__elemento input, .formulario__elemento select{
+        max-width:220px;
+        height: 30px;
+    }
+    .menores{
+        gap:1.5rem;
+        flex-direction: column;
+    }
+
+    .menor input, .formulario__elemento select{
+        width:140px;
+    }
+    .formulario__botao{
+        width:140px;
+        height:40px;
+        font-size: 20px;
+    }
 }

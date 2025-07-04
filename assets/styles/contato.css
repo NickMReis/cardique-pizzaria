@@ -89,6 +89,9 @@
 
 /* Media 768px */
 @media screen and (max-width:768px){
+    #contato{
+        padding: 1rem;
+    }
     .contato__informacao h2{
         font-size:32px;
     }
@@ -105,7 +108,8 @@
 /* Media 768px */
 @media screen and (max-width:500px){
     .contato__mapa iframe{
-        max-width:310px;
+        padding:0.5rem;
+        max-width:300px;
         max-height:250px;
     }
 }

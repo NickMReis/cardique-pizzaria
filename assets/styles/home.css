@@ -56,7 +56,7 @@
 /* Avaliações */
 .home__avaliacoes{
     background-color: var(--cor-background-avaliacoes);
-    height:85vh;
+    min-height:85vh;
     padding: 4rem;
     display:flex;
     flex-direction: column;
@@ -185,15 +185,15 @@
     /* Avaliações */
     .home__avaliacoes{
         padding: 1rem;
-        height:75vh;
+        min-height:75vh;
     }
 
     .home__avaliacoes h2{
-        font-size:40px;
+        font-size:36px;
     }
 
     .home__avaliacoes-cards-card{
-        width:80%;
+        width:90%;
         height:200px;
         gap:1rem;
         padding:1rem;

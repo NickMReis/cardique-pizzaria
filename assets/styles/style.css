@@ -88,35 +88,43 @@ body{
 .link-reservas a{
     width:385px;
     height:100px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-/* .link-reservas a:hover{
-    background-color: blueviolet;
-} */
+
+.link-reservas a p{
+    display: none;
+    color: var(--cor-texto-secundario);
+    font-size: 22px;
+}
+
 
 
 /* Modal de exibição do cardápio */
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
-  justify-content: center;
-  align-items: center;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* fundo escuro translúcido */
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-conteudo {
-  background: var(--cor-background-cardapio);
-  padding: 1.5rem;
-  border-radius: 16px;
-  max-width: 700px;
-  width: 90%;
-  position: relative;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  animation: fadeIn 0.3s ease;
+    background: var(--cor-background-cardapio);
+    padding: 1.5rem;
+    border-radius: 16px;
+    max-width: 700px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    animation: fadeIn 0.3s ease;
 }
 
 .modal-conteudo img{
@@ -125,19 +133,19 @@ body{
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: scale(0.95); }
-  to { opacity: 1; transform: scale(1); }
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
 }
 
 /* Botão de fechar */
 .fechar-modal {
-  position: absolute;
-  top: 0.5rem;
-  right: 1.5rem;
-  font-size: 7rem;
-  font-weight: bold;
-  color: var(--cor-background-principal);
-  cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    font-size: 7rem;
+    font-weight: bold;
+    color: var(--cor-background-principal);
+    cursor: pointer;
 }
 
 .fechar-modal:hover{
@@ -147,7 +155,9 @@ body{
 
 /* Media 1366px */
 @media screen and (max-width:1366px){
-
+    .modal-conteudo{
+        max-width: 500px;
+    }
 }
 
 /* Media 768px */
@@ -159,6 +169,15 @@ body{
 
     .menu-hamburguer {
         display: block;
+    }
+
+    .modal-conteudo{
+        max-width: 700px;
+        padding: 0.75rem;
+    }
+
+    .fechar-modal{
+        font-size: 4rem;
     }
 
     .links-cabecalho {
@@ -180,5 +199,27 @@ body{
     .links-cabecalho a,
     .links-cabecalho button {
         font-size: 2.2rem;
+    }
+
+    .link-reservas{
+        height:90%;
+        padding:0;
+        justify-content: start;
+    }
+
+    .link-reservas a{
+        background-color: rgba(0, 0, 0, 0.8);
+        border:2px solid var(--cor-primaria);
+        border-radius: 8px;
+        width:200px;
+        height:60px;
+    }
+
+    .link-reservas a p{
+        display: block;
+    }
+
+    .link-reservas a:hover{
+        background-color: rgba(0, 0, 0, 0.5);
     }
 }
