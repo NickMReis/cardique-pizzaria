@@ -228,7 +228,7 @@
 @media screen and (max-width:768px){
     /* Mapa do restaurante */
     .reservas__sistema-de-reserva{
-        min-height:80vh;
+        min-height:75vh;
     }
     .reservas__sistema-textos, .reservas__sistema-mesas{
         padding:1rem;
